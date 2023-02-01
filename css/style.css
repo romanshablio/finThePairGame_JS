@@ -1,0 +1,160 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(../img/page_bg.avif);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+}
+
+h1 {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+h2 {
+  padding: 10px;
+  background-color: #f5e9be;
+}
+
+.bg_button {
+  font-size: large;
+  font-weight: 200;
+  font-style: italic;
+  margin: 1rem;
+  width: 230px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 40px 15px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: black;
+  background: #acf9ff;
+  background-size: 7em 7em, 5em 5em, 3em 3em, 1em 1em;
+  background-color: #f5e9be;
+  font-size: 42px;
+  font-weight: 300;
+  width: 80%;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.item:hover {
+  color: black;
+  background: #a4aaff;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px !important;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 30%;
+  height: 100px;
+  color: transparent;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 225, 132, 0.7) 50%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(32, 113, 120, 0.3) 50%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 150, 102, 0.3) 50%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(23, 76, 79, 0.1) 50%,
+      rgba(255, 255, 255, 0) 50%
+    );
+  background-size: 7em 7em, 5em 5em, 3em 3em, 1em 1em;
+  background-color: #f5e9be;
+  font-size: 42px;
+  font-weight: bold;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.card.open {
+  color: #bbe48dc5;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2) 40%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    linear-gradient(rgba(0 180 255 / 70%), rgba(255, 255, 255, 0));
+  background-size: 1em 1em, 100%;
+  background-color: rgb(228, 49, 18);
+}
+
+.card.success {
+  background: linear-gradient(
+      90deg,
+      rgba(181, 247, 127, 0.7) 50%,
+      rgba(253, 232, 39, 0) 50%
+    ),
+    linear-gradient(90deg, rgba(45, 190, 32, 0.3) 50%, rgba(35, 211, 35, 0) 50%),
+    linear-gradient(
+      45deg,
+      rgba(61, 219, 69, 0.3) 50%,
+      rgba(58, 223, 52, 0.616) 50%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(23, 76, 79, 0.1) 50%,
+      rgba(255, 255, 255, 0) 50%
+    );
+  background-color: greenyellow;
+  color: coral;
+  transform: scale(0.95);
+}
+
+.start__game__buttons {
+  display: flex;
+  justify-content: center;
+}
